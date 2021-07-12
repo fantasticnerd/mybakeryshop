@@ -1,0 +1,36 @@
+html { font-size: 22px; }
+
+.card {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 17px;
+    background: #f494d6;
+    box-shadow:  11px 11px 16px #9c5f89,
+                 -11px -11px 16px #ffc9ff;
+  padding: 2rem;
+  height: 9rem;
+  text-align: center;
+}
+
+.cards {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 2rem;
+}
+
+/* Screen larger than 600px? 2 column */
+@media (min-width: 600px) {
+  .cards { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* Screen larger than 900px? 3 columns */
+@media (min-width: 900px) {
+  .cards { grid-template-columns: repeat(3, 1fr); }
+}  
+
+.card img{
+    width: 60%;
+    display: block;
+    margin: auto;
+}
